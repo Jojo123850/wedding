@@ -12,7 +12,10 @@
     --color4:#EC4899;
     --color5: #FFFFFF;
 }
-a{
+#burgerMenu{
+    display: none;
+}
+a, ::placeholder, textarea{
     font-family: "Roboto", sans-serif;
     text-decoration: none;
     font-size: 16px;
@@ -98,6 +101,7 @@ header{
     max-width: 1920px;
     margin: auto;
     padding-bottom: 40px;
+    overflow-x: hidden;
     .divsec1{
         max-width: 1440px;
         margin: auto;
@@ -150,6 +154,7 @@ header{
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
+    overflow-x: hidden;
     .artsec, h2{
         text-align: center;
         padding-top: 20px;
@@ -181,6 +186,7 @@ header{
     max-width: 1920px;
     margin: auto;
     background-color: var(--color3);
+      overflow-x: hidden;
     div{
         max-width: 1440px;
         margin: auto;
@@ -194,6 +200,7 @@ header{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 40px;
+        padding: 20px;
         
         a{
             border-radius: 15px;
@@ -234,6 +241,7 @@ header{
 #section4{
     max-width: 1920px;
     margin: auto;
+    overflow-x: hidden;
     .divsec4{
         max-width: 1140px;
         margin: auto;
@@ -250,62 +258,145 @@ header{
             padding-bottom: 30px;
         }
         .imagesec4{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
             padding-top: 40px;
 
             .image0{
-                width:  353px;
+                width:100%;
                 object-fit: cover;
                 height: 300px;
     
         }
-            .formulaire{
-                max-width: 1120px;
-                margin: auto;
         
-                form{
-            display: grid;
-            max-width: 745px;
-            margin: auto;
-            padding: 20px;
-        }
         
-        input, textarea{
-            width: 250px;
+        
+        
+        
+    }
+}
+.formulaire{
+    max-width: 1120px;
+    margin: auto;
+    padding-top: 40px;
+
+    form{
+        color: var(--color1);
+        display: grid;
+        max-width: 745px;
+        margin: auto;
+        padding: 20px;
+
+        input,
+        textarea{
             margin-bottom: 20px;
         }
+
         input{
             padding: 8px;
-        
-        
-        
-        
-        
         }
-            }
-        
-                
-        }
+    }
+}
+}
+/* FOOTER */
 /* FOOTER */
 footer{
     background-color: var(--color3);
-    
+
     div{
-            max-width: 1440px;
-            margin: auto;
+        max-width: 1440px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 50px;
+
+        ul{
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
-            padding: 20px;
+            gap: 20px;
+        }
+    }
+}
 
-            ul{
+/* RESPONSIVE */
+@media screen and (max-width:1024px) {
+.aheader{
+    display: none;
+}
+.divsec3{
+    padding:20px ;
+}
+}
+/* RESPONSIVE */
+@media screen and (max-width:768px) {
+    body{
+        header{
+
+            div{
                 display: flex;
-                flex-wrap: wrap;
+                justify-content: space-between;
                 gap: 20px;
+            
+                nav ul{
+                    display: none;
+                
+                }
+            #burgerMenu{
+                    display: block;
+            }
+            .aheader{
+                display: none;
+            }
+        }
+        }
+        main{
+            #section1{
+                .image1{
+                    display: none;
+                }
+            }
+            #section2{
+                padding: 20px;
+                div{
+                    display: grid;
+                    grid-template-columns: 1fr;
+                }
+                .artp,h3{
+                    text-align: justify;
+
+                }
+            }
+            #section3{
+                .divsec3{
+                    padding:20px ;
+                    display: grid;
+                    grid-template-columns: 1fr;
+                }
 
             }
-
+            }
+            
         }
-}
+        
+        #section4{
+           .divsec4 .imagesec4{
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+        }
+
+        footer{
+            div{
+                display: grid;
+              justify-content: center;
+                ul{
+                    display: grid;
+                    padding-top: 20px;
+                }
+            }
+        }
+        
+    }
+
