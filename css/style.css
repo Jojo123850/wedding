@@ -261,20 +261,33 @@ header{
                 height: 300px;
     
         }
+            .formulaire{
+                max-width: 1120px;
+                margin: auto;
+        
+                form{
+            display: grid;
+            max-width: 745px;
+            margin: auto;
+            padding: 20px;
         }
-    
-/* SECTION5 */
-#section5{
-    max-width: 1920px;
-    margin: auto;
-    .formululaire{
-        max-width: 745px;
-        margin: auto;
-
-
-    }
-}
-}
+        
+        input, textarea{
+            width: 250px;
+            margin-bottom: 20px;
+        }
+        input{
+            padding: 8px;
+        
+        
+        
+        
+        
+        }
+            }
+        
+                
+        }
 /* FOOTER */
 footer{
     background-color: var(--color3);
