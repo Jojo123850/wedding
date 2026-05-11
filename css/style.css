@@ -55,6 +55,21 @@ line-height: 20px;
 vertical-align: middle;
 
 }
+button{
+    color: var(--color1);
+    background-color: var(--color2);
+    padding: 12px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+   justify-self: center;
+   border: 1px solid;
+   border-color: var(--color2);
+}
+button:hover{
+    background-color: var(--color4);
+    color: var(--color2);
+    border-color: var(--color4);
+}
 
 /* HEADER */
 
