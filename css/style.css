@@ -91,8 +91,8 @@ header{
         img{
             max-width: 292px;
             width: 100%;
-            object-fit: cover;
-          height: -webkit-fill-available;
+          object-fit: contain;
+          height: auto;
     
         }
         nav ul{
