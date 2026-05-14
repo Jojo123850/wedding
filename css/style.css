@@ -56,9 +56,9 @@ vertical-align: middle;
 
 }
 button{
-    color: var(--color1);
+   color: var(--color5);
     background-color: var(--color2);
-    padding: 12px;
+    padding: 15px;
     padding-top: 4px;
     padding-bottom: 4px;
    justify-self: center;
@@ -337,88 +337,157 @@ footer{
 
 /* RESPONSIVE */
 @media screen and (max-width:1024px) {
-.aheader{
-    display: none;
-}
-.divsec3{
-    padding:20px ;
-}
-}
-/* RESPONSIVE */
-@media screen and (max-width:768px) {
     body{
         header{
-
-            div{
-                display: flex;
-                justify-content: space-between;
-                gap: 20px;
-            
-                nav ul{
-                    display: none;
-                
-                }
-            #burgerMenu{
-                    display: block;
-            }
             .aheader{
                 display: none;
             }
         }
+        #section1{
+            .divsec1{
+                display: grid;
+                grid-template-columns: 1fr;
+                .image{
+                    justify-content: center;
+                    .image0{
+                        padding-top: 0;
+                    }
+                }
+            }
+        }
+
+        .divsec3{
+            padding:20px ;
+        }
+        }
+    }
+/* RESPONSIVE */
+@media screen and (max-width:768px) {
+    body{
+        header > div {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 20px;
+    }
+
+    header > div nav ul {
+        display: none;
+    }
+
+    header > div #burgerMenu {
+        display: block;
+        align-self: center;
+       justify-self: end;
+        font-size: 30px;
+        padding-right: 10px;
+    }
+
+    header > div .aheader {
+        display: none;
+    }
+
         }
         main{
             #section1{
-                .image1{
-                    display: none;
-                }
-            }
-            #section2{
-                padding: 20px;
-                .artsec {
-                    text-align: start;
-                }
-                div{
-                    display: grid;
-                    grid-template-columns: 1fr;
-                }
-                h3{
-                    place-self: start;
+                padding: 0;
+                .divsec1{
+                    padding: 0;
+                    .div0{
+                        padding: 20px;
+                    }
+                    .image{
+                        padding: 0;
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        .image1{
+                            padding: 0;
+                            width: 100%;
+                            max-width: 100%;
+                            object-fit: cover;
+                            /* height: 300px; */
+                        }
+                        .image0{
+                            display: none;
+                        }
+                    }
 
-                }
-                .artp{
-                    place-self: start;
-
-                }
-            }
-            #section3{
-                .divsec3{
-                    padding:20px ;
-                    display: grid;
-                    grid-template-columns: 1fr;
                 }
 
             }
-            }
-            
-        }
-        
-        #section4{
-           .divsec4 .imagesec4{
-                display: grid;
-                grid-template-columns: 1fr;
-            }
-        }
-
-        footer{
-            div{
-                display: grid;
-              justify-content: center;
-                ul{
-                    display: grid;
-                    padding-top: 20px;
-                }
-            }
-        }
-        
+#section2{
+padding: 20px;
+.artsec, h2{
+        text-align: justify;
+}
+    div{
+    display: grid;
+    grid-template-columns: 1fr;
+    article{
+    text-align-last: left;
     }
+
+h3{
+    place-self: start;
+
+}
+.artp{
+   text-align: start;
+
+}
+}}
+
+    #section3{
+        padding: 0;
+        .artsec,h2{
+            text-align: start;
+            padding: 20px;
+
+        }
+        .divsec3{
+            padding: 0;
+            display: grid;
+            grid-template-columns: 1fr;
+           a{
+            border-radius: 0;
+           }
+            .div3img{
+               border-top-left-radius: 0;
+               border-top-right-radius: 0;
+
+            }
+        }
+
+    }
+    }
+    
+    #section4{
+        padding: 0;
+        padding-top: 70px;
+        .divsec4{
+            padding: 0;
+            .imagesec4{
+               padding: 0;
+               display: grid;
+               grid-template-columns: 1fr;
+               gap: 40px;
+       
+           }
+        }
+    }
+}
+
+
+footer{
+    div{
+        display: grid;
+        justify-content: center;
+        ul{
+            display: grid;
+            padding-top: 20px;
+        }
+    }
+}
+
+
 
